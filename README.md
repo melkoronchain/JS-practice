@@ -28,9 +28,6 @@ You can open files directly in your browser or use extension in VS Code.
 
 ## ✍️ Author
 
-- GitHub: [melkoronchain](https://github.com/melkoronchain)
+- GitHub: [melkoronchain](https://github.com/melkoronchain)  
+- X/Twitter: [melkoronchain](https://x.com/melkoronchain)  
 - Telegram: [@melkoronchain](https://t.me/melkoronchain)
-
---
-
-> 💡 This repo is part of my long-term goal to deeply understand JS before moving into fullstack development with Solidity and Web3.
