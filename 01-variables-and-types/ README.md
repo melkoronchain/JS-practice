@@ -45,12 +45,16 @@ console.log(typeof weapon);      // "undefined"
 
 Objects are stored by reference. This means if you assign one object to another variable, both point to the same memory.
 
+```js
+
 const obj1 = { power: 'darkness' };
 const obj2 = obj1;
 
 obj2.power = 'ultimate darkness';
 
 console.log(obj1.power); // "ultimate darkness"
+```
+
 
 Even though we modified obj2, obj1 changed too — because both point to the same object.
 
