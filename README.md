@@ -4,7 +4,7 @@ This repository contains my personal JavaScript practice and study materials.
 
 ## 🧠 What I'm learning
 
-- ✅ Variables, types, and scope (`let`, `const`, `var`)
+- ✅ Variables, types, and scope (`let`, `const`)
 - ✅ Data types: primitives vs reference types
 - ✅ Functions and arrow functions
 - ✅ Arrays, objects, loops
