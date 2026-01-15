@@ -109,6 +109,31 @@ console.log(myInfo);
 	•	Objects are stored by reference
 	•	Properties can be added, updated, or deleted
 
+	---
+
+	## 6. Object Copying
+
+Objects in JavaScript are stored by **reference**, so copying them requires special care.
+
+### Shallow copy (one level)
+
+```js
+const copy1 = Object.assign({}, original);
+const copy2 = { ...original };
+```
+	•	Copies only the first level
+	•	Nested objects are still shared
+
+```js
+const deepCopy = JSON.parse(JSON.stringify(original));
+```
+
+	•	Creates a fully independent copy
+	•	Nested objects are also copied
+	•	Not suitable for functions, dates, undefined, etc.
+
+🧠 Choose the method based on your data structure.
+
 ## ✅ Summary
 
 - Use `const` by default, `let` if reassignment is needed.
@@ -118,3 +143,4 @@ console.log(myInfo);
 -- Objects can be mutated even when declared with `const`.
 - `const` protects the variable binding, not the object itself.
 - Adding, updating, and deleting properties changes the same object reference.
+- Objects can be **copied in different ways** depending on the task.
