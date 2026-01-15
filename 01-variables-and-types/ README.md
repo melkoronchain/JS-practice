@@ -104,6 +104,10 @@ delete myInfo.city;
 console.log(myInfo);
 // { name: 'Alex', age: 27, career: 'Developer' }
 ```
+ Key points:
+	•	const prevents reassignment, not mutation
+	•	Objects are stored by reference
+	•	Properties can be added, updated, or deleted
 
 ## ✅ Summary
 
@@ -111,3 +115,6 @@ console.log(myInfo);
 - Primitive types are copied by **value**.
 - Objects are copied by **reference**.
 - Functions create their own **scope**.
+-- Objects can be mutated even when declared with `const`.
+- `const` protects the variable binding, not the object itself.
+- Adding, updating, and deleting properties changes the same object reference.
