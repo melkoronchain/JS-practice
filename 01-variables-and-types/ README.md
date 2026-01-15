@@ -81,6 +81,30 @@ console.log('Outside:', power); // "infinite"
 
 ---
 
+## 5. Object mutation (reference types)
+
+Objects in JavaScript are **reference types**.  
+Even if an object is declared using `const`, its properties can still be changed.
+
+```js
+const myInfo = {
+  name: 'Alex',
+  age: 25,
+  city: 'New York'
+}
+
+myInfo.age = 27;
+console.log(myInfo.age); // 27
+
+myInfo.career = 'Developer';
+console.log(myInfo);
+// { name: 'Alex', age: 27, city: 'New York', career: 'Developer' }
+
+delete myInfo.city;
+console.log(myInfo);
+// { name: 'Alex', age: 27, career: 'Developer' }
+```
+
 ## ✅ Summary
 
 - Use `const` by default, `let` if reassignment is needed.
