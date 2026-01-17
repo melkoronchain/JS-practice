@@ -4,4 +4,4 @@ function myF () {
 
 const greet = myF;
 
-greet(); //
+greet(); //Hello!
