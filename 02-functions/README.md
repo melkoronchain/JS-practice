@@ -55,8 +55,58 @@ const greetings = () => {
 greetings();
 ```
 
+## 4. Function as a Value
+
+In JavaScript, functions are **first-class citizens**.
+This means a function can be:
+- stored in a variable
+- passed around like any other value
+
+```js
+function myF() {
+  console.log('Hello!');
+}
+
+const greet = myF;
+
+greet(); // Hello!
+```
+
+Here, the function myF is assigned to a variable without calling it.
+greet now references the same function.
+
+## 5. Function as an Argument (Callback)
+
+A function can be passed into another function as an argument.
+When such a function is executed by another function, it is called a **callback**.
+
+```js
+function myF() {
+  console.log('Hello!');
+}
+
+function greet(callback) {
+  callback();
+}
+
+greet(myF); // Hello!
+```
+
+In this example:
+	•	myF is passed into greet as an argument
+	•	Inside greet, it is executed using callback()
+	•	Here, myF plays the role of a callback function
+
+Callbacks are extremely common in JavaScript:
+	•	array methods (map, forEach, filter)
+	•	async code
+	•	event handlers
+
 ## ✅ Summary
  - Function declarations are hoisted
  - Function expressions are not hoisted
  - Arrow functions have a shorter syntax
  - Functions help organize and reuse logic
+ - Functions can be treated like values
+ - Functions can be passed as arguments
+ - A callback is a function executed by another function
