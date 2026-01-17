@@ -24,8 +24,8 @@ sum(10, 2); // 12
 ## 2. Function Expression
 
 Function expression is when a function is assigned to a variable.
- - Stored in a variable
- - Cannot be used before declaration
+- Stored in a variable
+- Cannot be used before declaration
 
 ```js
 const createUser = function (name, age) {
@@ -43,8 +43,8 @@ This pattern is often used when functions are treated as values.
 ## 3. Arrow Function
 
 Arrow functions provide a shorter syntax.
-	- Shorter and cleaner
-	- Do not have their own `this`
+- Shorter and cleaner
+- Do not have their own `this`
 
 
 ```js
@@ -93,14 +93,14 @@ greet(myF); // Hello!
 ```
 
 In this example:
-	•	myF is passed into greet as an argument
-	•	Inside greet, it is executed using callback()
-	•	Here, myF plays the role of a callback function
+ - myF is passed into greet as an argument
+ - Inside greet, it is executed using callback()
+ - Here, myF plays the role of a callback function
 
 Callbacks are extremely common in JavaScript:
-	•	array methods (map, forEach, filter)
-	•	async code
-	•	event handlers
+ - array methods (map, forEach, filter)
+ - async code
+ - event handlers
 
 ## ✅ Summary
  - Function declarations are hoisted
