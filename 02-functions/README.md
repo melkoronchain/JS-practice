@@ -102,6 +102,51 @@ Callbacks are extremely common in JavaScript:
  - async code
  - event handlers
 
+ ## 6. Strict Mode ('use strict')
+
+ Strict mode helps catch common mistakes and prevents accidental global variables.
+
+Example with 'use strict'
+
+```js
+ 'use strict';
+
+function strictExample() {
+  a = true; // ❌ ReferenceError
+  console.log(a);
+}
+
+strictExample();
+```
+
+What happens here:
+ - Variable a is not declared with let, const, or var
+ - In strict mode, this causes a ReferenceError
+ - JavaScript does NOT allow implicit global variables
+
+ Example without 'use strict'
+
+```js
+ function nonStrictExample() {
+  a = true; // ✅ creates a global variable
+  console.log(a);
+}
+
+nonStrictExample(); // true
+console.log(a);     // true
+```
+
+What happens here:
+ - JavaScript silently creates a global variable
+ - This can lead to bugs and unexpected behavior
+
+ Key Takeaways
+ - 'use strict' prevents accidental global variables
+ - Variables must be declared with let, const, or var
+ - Strict mode helps catch bugs early
+ - Modern JavaScript should always use strict mode
+ 
+
 ## ✅ Summary
  - Function declarations are hoisted
  - Function expressions are not hoisted
@@ -110,3 +155,10 @@ Callbacks are extremely common in JavaScript:
  - Functions can be treated like values
  - Functions can be passed as arguments
  - A callback is a function executed by another function
+ - 'use strict' enables a safer version of JavaScript
+ - Strict mode prevents accidental creation of global variables
+ - All variables must be declared with let, const, or var
+ - Without strict mode, undeclared variables become global
+ - Using strict mode helps avoid bugs and unexpected behavior
+ - Always use 'use strict' in modern JavaScript
+
