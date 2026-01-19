@@ -1,0 +1,18 @@
+//Unary Operators (one operand)
+
+let x = 5;
+x++;        // post-increment
+++x;        // pre-increment
+console.log(!true); // false
+
+//Binary Operators (two operands)
+
+console.log(5 + 3); // binary +
+console.log(5 > 3); // binary >
+
+//Ternary Operator (three operands)
+
+const age = 18;
+const access = age >= 18 ? 'allowed' : 'denied';
+
+console.log(access); // allowed
