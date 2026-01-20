@@ -181,7 +181,7 @@ function createPost(post, createdAt = new Date()) {
 
 const firstPost = {
   id: 1,
-  author: 'Ruslan'
+  author: 'Alex'
 };
 
 createPost(firstPost);
