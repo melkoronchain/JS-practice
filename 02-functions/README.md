@@ -145,7 +145,48 @@ What happens here:
  - Variables must be declared with let, const, or var
  - Strict mode helps catch bugs early
  - Modern JavaScript should always use strict mode
- 
+
+ ## 07 Default Parameters
+
+Default parameters allow functions to define fallback values for arguments when they are not provided.
+
+This feature helps make functions safer, more predictable, and easier to read.
+
+Basic Example
+
+Default parameters are used when an argument is undefined.
+
+```js
+function multiply(price, multiplier = 1) {
+  return price * multiplier;
+}
+
+multiply(10);     // 10
+multiply(10, 3);  // 30
+ ```
+
+ If multiplier is not passed, the default value 1 is used.
+
+## Default Parameters with Objects
+
+Default parameters are commonly used with objects to add optional properties without mutating the original object.
+
+```js
+function createPost(post, createdAt = new Date()) {
+  return {
+    ...post,
+    createdAt
+  };
+}
+
+const firstPost = {
+  id: 1,
+  author: 'Ruslan'
+};
+
+createPost(firstPost);
+```
+If createdAt is not provided, the current date is automatically added.
 
 ## ✅ Summary
  - Function declarations are hoisted
@@ -161,4 +202,11 @@ What happens here:
  - Without strict mode, undeclared variables become global
  - Using strict mode helps avoid bugs and unexpected behavior
  - Always use 'use strict' in modern JavaScript
+ - Default parameters allow functions to use fallback values when arguments are not provided
+ - Default values are applied only when the argument is undefined
+ - They work the same way in all function types
+ - Default parameters are commonly used with objects to add optional properties
+ - Using default parameters helps write safer and more readable functions
+ - The original objects are not mutated when using spread syntax
+
 
