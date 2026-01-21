@@ -5,7 +5,7 @@ Statements control the flow of program execution.
 
 ---
 
-## try...catch Statement
+## 1 try...catch Statement
 
 The `try...catch` statement is used for error handling.
 It allows you to safely execute code that may throw an error.
@@ -47,9 +47,10 @@ Explanation
 
 ⸻
 
-# ✅ Summary
+## ✅ Summary
  - try...catch is a statement
  - Used for handling runtime errors
  - Prevents application crashes
  - Errors are represented by Error objects
+
 
