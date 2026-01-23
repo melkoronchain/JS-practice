@@ -45,6 +45,34 @@ Explanation
 - catch handles the error
 - Program execution continues after catch
 
+
+## 2. if Statements
+
+Multiple `if` statements are evaluated independently.
+Each condition is checked even if a previous one was true.
+
+Example:
+- Useful when multiple conditions may apply at the same time
+
+---
+
+## 3. if / else if / else
+
+This structure creates a conditional chain.
+Only the first matching condition is executed.
+
+Example:
+- Useful when only one outcome should occur
+
+---
+
+## 4. switch Statement
+
+The `switch` statement compares a value against multiple cases.
+
+Example:
+- Often used as an alternative to long `if / else if` chains
+
 ⸻
 
 ## ✅ Summary
@@ -52,6 +80,10 @@ Explanation
  - Used for handling runtime errors
  - Prevents application crashes
  - Errors are represented by Error objects
+ - `if / if / if` checks all conditions independently
+ - `if / else if / else` stops after the first true condition
+ - `switch` is useful for comparing a single value
+ - Statements control program flow and decision making
 
 
 
