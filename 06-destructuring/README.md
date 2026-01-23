@@ -38,7 +38,7 @@ const getUserInfo = ({ user, commentsQty }) => {
 
 This pattern is commonly used in real-world JavaScript code.
 
-## sSummary
+## Summary
  - Destructuring works with objects and arrays
  - Object destructuring is based on property names
  - Array destructuring is based on position
