@@ -67,7 +67,7 @@ forEach()
 
 ```js
 numbers.forEach((element, index) => {
-  console.log(`Index ${index}: ${element}`);
+  console.log(element,index);
 });
 ```
 
