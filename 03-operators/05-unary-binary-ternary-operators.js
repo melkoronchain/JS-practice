@@ -16,3 +16,12 @@ const age = 18;
 const access = age >= 18 ? 'allowed' : 'denied';
 
 console.log(access); // allowed
+
+const value = ' ';
+
+value
+? console.log('True') // True
+: console.log('False');
+
+let val = 60;
+console.log(val>=0? val+11: val+10); // 71
