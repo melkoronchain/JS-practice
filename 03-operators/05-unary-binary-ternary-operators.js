@@ -20,8 +20,8 @@ console.log(access); // allowed
 const value = ' ';
 
 value
-? console.log('True') // True
-: console.log('False');
+? console.log('True') 
+: console.log('False'); // True
 
 let val = 60;
 console.log(val>=0? val+11: val+10); // 71
